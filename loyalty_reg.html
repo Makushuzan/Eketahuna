@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Fresh Foods</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" >
+  <link rel="stylesheet" href="./css/style2.css">
+
+  <script>
+    
+function showFormData() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    
+    alert("You have entered the following information: "  +"\n"
+            +"\n"+"First name: " + fname+"\n" + "\nLast name: " +  lname+"\n" + "\nPhone:" + phone+"\n" + "\nEmail: " + email);
+  }
+
+    </script>
+
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="heading">
+
+      <h4>Fresh Foods Eketahuna</h4>
+
+    </div>
+
+    <ul class="nav-links">
+<!--referencing the page name as this navbar will be used by other pages-->
+     <li><a href="./main_page2.html#Home">Home</a></li>
+     <li><a href="./main_page2.html#About">About</a></li>
+     <li><a href="./main_page2.html#Products">Products</a></li>
+     <li><a href="./main_page2.html#Loyalty">Loyalty Program</a></li>
+     <li><a href="./main_page2.html#Contact">Contact</a></li>
+
+    </ul>
+
+  </nav>
+ 
+  <h1>Fresh Foods Loyalty Program Registration Form</h1>
+  <br><br><br>
+
+  <h3>Thank you for registering for the Fresh Foods Loyalty Program. Please fill out the following form and we will be in touch with you soon.</h3>
+  <br><br>
+<form name = valForm  onsubmit="return showFormData()">
+ <fieldset>
+  <legend>Personal details:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="phone">Telephone:</label>
+  <input type="text" id="phone" name="phone"><br><br>
+  <label for="email">Email address:</label>
+  <input type="email" id="email" name="email"><br><br>
+  
+  
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+
+<br><br>
+
+<div class="row">
+  <div class="column">
+  <figure>
+    <img src="./images/tomato_small.jpg" alt="Tomato" width="300" height="400">
+  </figure>
+  </div>
+<div class="column">
+<figure>
+<img src="./images/carrots_small.jpg" alt="Carrot" width="300" height="400">
+</figure>
+</div>
+<div class="column">
+<figure>
+<img src="./images/celery_small.jpg" alt="Celery" width="300" height="400">
+</figure>    
+</div>
+<div class="column">
+<figure><img src="./images/variety_small.jpg" alt="Variety" width="300" height="400">
+</figure>
+</div>
+</div>
+
+  
+  <footer>
+    <p id="footer">Copyright ©2023 Fresh Foods</p>
+  </footer>
+
+</body>
+</html>
+
